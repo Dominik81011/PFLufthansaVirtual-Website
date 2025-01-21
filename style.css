@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Mono:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: white;
+}
+
+
+.theme-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+.theme-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.contact-text{
+    text-decoration: line-through;
+}
+
+
+
+.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background-color: #121212;
+}
+
+.dark-mode .nav_links a {
+    color: #ffffff;
+}
+
+.dark-mode .nav_links li a:hover {
+    color: #f7b500;
+}
+
+.dark-mode .logo {
+    filter: brightness(0) invert(1);
+}
+
+.dark-mode .Main, .dark-mode .routes, .dark-mode .server {
+    background-color: #121212;
+}
+
+.dark-mode .services {
+    background-color: #1d1d1d;
+}
+
+.dark-mode .partnership {
+    background-color: #121212;
+}
+
+.dark-mode .team-card {
+    background-color: #1f1f1f;
+}
+
+.dark-mode .service-card, .dark-mode .partner-card {
+    background-color: #1f1f1f;
+}
+
+.dark-mode .theme-btn {
+    background-color: #f7b500;
+    color: #121212;
+}
+
+.dark-mode .services-header h2, .dark-mode .routes h1, .dark-mode .server h1  {
+    color: #ffffff;
+}
+
+.dark-mode .partnership,
+.dark-mode .partnership h2,
+.dark-mode .partnership h4,
+.dark-mode .partnership a {
+    color: #ffffff;
+}
+
+
+
+.dark-mode .theme-btn:hover {
+    background-color: #f7b500;
+    color: #121212;
+}
+
+
+
+
+li, a, btn{
+    font-family: "Roboto Mono", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+header {
+    display: flex;
+    z-index: 9999; 
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0%;
+    background-color: white;
+    transition: all 0.3s ease; 
+}
+
+
+
+.logo{
+    cursor: pointer;
+    width: 180px;
+    height: auto;
+}
+
+.nav_links{
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+    position: relative; 
+}
+
+.nav_links li a {
+    text-decoration: none;
+    color: #000; 
+    position: relative;
+    display: inline-block;
+}
+
+.nav_links li a::after {
+    content: ""; 
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 0; 
+    height: 2px; 
+    background-color: #081c44; 
+    transition: width 0.3s ease; 
+}
+
+.nav_links li a:hover::after {
+    width: 100%; 
+}
+
+
+.Main {
+    height: 80vh;
+    color: rgb(255, 255, 255);
+    background: url('https://cdn.discordapp.com/attachments/1292912130760249445/1328821671305547816/vrlufthansabg.png?ex=6788191e&is=6786c79e&hm=38e9c0cffd8480b992c87a161c4e1d9fe106ce66bcb46b17519ce712884843c0&') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Main-content {
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+
+.Main h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.Main p {
+    font-size: 1.2rem;
+    margin-bottom: 100px;
+
+}
+
+.main-btn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 20px;
+    padding: 20px 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+   
+
+
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff; 
+    color: #000000; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.services-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.services-header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.services-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    font-size: 2rem;
+    color: #008cff;
+    margin-bottom: 10px;
+}
+
+.service-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.service-card a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #006eff;
+    font-weight: bold;
+}
+
+.service-card a:hover {
+    text-decoration: underline;
+}
+
+
+.routes {
+    height: 80vh;
+    color: rgb(255, 255, 255);
+    background: url('https://cdn.discordapp.com/attachments/1292912130760249445/1328830485647851634/vtbg2.png?ex=67882154&is=6786cfd4&hm=60a60847457b95010c4342b36840691aa35e1af14429cb95a6bfcbdb2b5f9ef8&') center/cover no-repeat;
+    justify-content: left;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.routes-content {
+    max-width: 800px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.routes h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    margin-right: 50%;
+    position: relative;
+    top: -170px;
+}
+
+.routes p {
+    font-size: 1.6rem;
+    margin-bottom: 100px;
+    width: 70%;
+    position: relative;
+    top: -100px;
+    left: 10%;
+}
+
+.routes-btn {
+    background-color: #ffffff;
+    font-size: 20px;
+    padding: 20px 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin-right: 50px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.partnership {
+    padding: 190px 20px;
+    text-align: center;
+    background-color: #021e46;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.partnership h4{
+    color: rgb(0, 0, 0);
+}
+
+.partnership-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.partnership-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.partner-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.partner-image {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.partner-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.partner-btn {
+    background-color: #008cff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.partner-btn:hover {
+    background-color: #005bb5;
+}
+
+.ryanair-image {
+    background-image: url('/Pictures/idrfmCAH_f_1737047017529.png');
+}
+
+.singapore-image {
+    background-image: url('/Pictures/sing3-removebg-preview.jpg');
+    background-color: #005bb5;
+}
+
+.easyjet-image {
+    background-image: url('/Pictures/easy.png');
+}
+
+
+
+.server {
+    height: 80vh;
+    color: rgb(255, 255, 255);
+    background: url('https://cdn.discordapp.com/attachments/1292912130760249445/1329500688455176257/vrlufthansabg.png?ex=678a9181&is=67894001&hm=a590cfd2360880f0b28a22e4e811e19dc8039a59eb132e4d24e921ba98d6e520&') center/cover no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.server-content {
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 5%;
+}
+
+.server h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.server p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.server-info {
+    margin-bottom: 10px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.detail {
+    font-style: italic;
+    cursor: pointer;
+    text-decoration: underline dashed;
+}
+
+.detail.show-info {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.aboutus {
+    height: 80vh;
+    color: rgb(255, 255, 255);
+    background-color: #081c44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutus-content {
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+
+.aboutus h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    left: 17%;
+    top: 5%;
+    position: absolute;
+    text-decoration: underline;
+}
+
+.aboutus p {
+    font-size: 2.0rem;
+    margin-bottom: 100px;
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    transform: scale(0.8);
+    width: 60%;
+    line-height:190%;
+
+}
+
+.aboutus-image {
+    width: auto; 
+    height: auto; 
+    position: absolute; 
+    right: 10%;
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+.aboutus-image2 {
+    width: auto; 
+    height: auto; 
+    position: absolute; 
+    right: 20%;
+    top: 65%; 
+    transform: translateY(-50%); 
+}
+
+.founder-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+}
+
+.founder-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.founder-card {
+    background-color:   transparent;
+
+    padding: 30px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border-radius: 2px;
+    position: absolute;
+    left: 30%;
+    bottom: 5%;
+}
+
+.founder-image {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.founder-image {
+    background-image: url('/Pictures/bananensammler_.gif');
+}
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+
+.loader {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid transparent;
+    border-top: 5px solid #003cff; 
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+
+.logo2 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
